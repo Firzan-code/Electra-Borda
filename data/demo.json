@@ -1,0 +1,24 @@
+{
+  "id": "demo-v1",
+  "name": "Pemilihan platform AI — simulasi akademik",
+  "data_kind": "dummy",
+  "alternatives": [
+    {"id": "A1", "name": "ChatGPT"},
+    {"id": "A2", "name": "Gemini"},
+    {"id": "A3", "name": "Claude"},
+    {"id": "A4", "name": "Perplexity"}
+  ],
+  "criteria": [
+    {"id": "C1", "name": "Ketepatan isi", "type": "benefit", "unit": "skor", "min": 1, "max": 5},
+    {"id": "C2", "name": "Relevansi respons", "type": "benefit", "unit": "skor", "min": 1, "max": 5},
+    {"id": "C3", "name": "Keterlacakan referensi", "type": "benefit", "unit": "skor", "min": 1, "max": 5},
+    {"id": "C4", "name": "Kemudahan penggunaan", "type": "benefit", "unit": "skor", "min": 1, "max": 5},
+    {"id": "C5", "name": "Kecukupan akses", "type": "benefit", "unit": "skor", "min": 1, "max": 5},
+    {"id": "C6", "name": "Waktu penyelesaian", "type": "cost", "unit": "menit simulasi", "min": 1, "max": 60}
+  ],
+  "decision_makers": [
+    {"id": "DM01", "name": "Penilai simulasi 01", "weights": [30, 20, 15, 10, 10, 15], "matrix": [[5, 4, 3, 5, 4, 12], [4, 4, 3, 4, 5, 10], [5, 5, 4, 4, 3, 14], [4, 4, 5, 4, 4, 11]]},
+    {"id": "DM02", "name": "Penilai simulasi 02", "weights": [25, 20, 25, 10, 10, 10], "matrix": [[4, 5, 3, 5, 4, 13], [4, 4, 4, 4, 5, 10], [5, 5, 4, 4, 3, 15], [4, 4, 5, 4, 4, 9]]},
+    {"id": "DM03", "name": "Penilai simulasi 03", "weights": [20, 15, 15, 20, 20, 10], "matrix": [[5, 4, 3, 5, 4, 11], [4, 4, 4, 5, 5, 9], [5, 5, 4, 4, 3, 13], [4, 4, 5, 4, 4, 10]]}
+  ]
+}

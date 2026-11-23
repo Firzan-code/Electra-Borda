@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+instance/
+*.db
+*.sqlite
+*.sqlite3
+_arsip/
+evidence/excel_variants/
+*.tmp
+*.bak
+.env
